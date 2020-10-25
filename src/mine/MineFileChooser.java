@@ -58,7 +58,7 @@ public class MineFileChooser extends JFileChooser {
 	public void approveSelection() {
 		final File file = getSelectedFile();
 		if (file.exists()) {
-			if (JOptionPane.showConfirmDialog(this, file.getName() + " ist bereits vorhanden." + System.getProperty("line.separator") + "Möchten Sie sie ersetzen?", "Speichern bestätigen", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE) == JOptionPane.YES_OPTION)
+			if (JOptionPane.showConfirmDialog(this, file.getName() + " ist bereits vorhanden." + System.getProperty("line.separator") + "MÃ¶chten Sie sie ersetzen?", "Speichern bestÃ¤tigen", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE) == JOptionPane.YES_OPTION)
 				super.approveSelection();
 		} else
 			super.approveSelection();

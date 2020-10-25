@@ -50,7 +50,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 		gameMenu.add(newGame);
 		gameMenu.addSeparator();
 		final ButtonGroup levelGroup = new ButtonGroup();
-		final JRadioButtonMenuItem beginners = new JRadioButtonMenuItem("Anfänger");
+		final JRadioButtonMenuItem beginners = new JRadioButtonMenuItem("AnfÃ¤nger");
 		levelGroup.add(beginners);
 		beginners.addActionListener(new ActionListener() {
 			@Override
@@ -77,7 +77,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 			}
 		});
 		gameMenu.add(pros);
-		final JRadioButtonMenuItem custom = new JRadioButtonMenuItem("Benutzerdefiniert…");
+		final JRadioButtonMenuItem custom = new JRadioButtonMenuItem("Benutzerdefiniertâ€¦");
 		levelGroup.add(custom);
 		gameMenu.add(custom);
 		gameMenu.addSeparator();
@@ -104,7 +104,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 		sound.setEnabled(false); // TODO implement sound
 		gameMenu.add(sound);
 		gameMenu.addSeparator();
-		final JMenuItem highscore = new JMenuItem("Bestzeiten…");
+		final JMenuItem highscore = new JMenuItem("Bestzeitenâ€¦");
 		highscore.setEnabled(false); // TODO implement highscore
 		gameMenu.add(highscore);
 		gameMenu.addSeparator();
@@ -142,7 +142,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 				if (fileChooser.showSaveDialog(MineFrame.getInstance()) == JFileChooser.APPROVE_OPTION)
 					try {
 						if (!ImageIO.write(image, ComponentScreener.IMG_TYPE, fileChooser.getSelectedFile()))
-							JOptionPane.showMessageDialog(MineFrame.getInstance(), "Ihr System unterstützt das Format " + ComponentScreener.IMG_TYPE + " nicht.", "Speichern nicht möglich", JOptionPane.WARNING_MESSAGE);
+							JOptionPane.showMessageDialog(MineFrame.getInstance(), "Ihr System unterstÃ¼tzt das Format " + ComponentScreener.IMG_TYPE + " nicht.", "Speichern nicht mÃ¶glich", JOptionPane.WARNING_MESSAGE);
 					} catch (IOException ioe) {
 						ioe.printStackTrace();
 						JOptionPane.showMessageDialog(MineFrame.getInstance(), ioe.getStackTrace(), "Fehler beim Speichern", JOptionPane.ERROR_MESSAGE);
@@ -219,7 +219,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 		help.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
 		helpMenu.add(help);
 		helpMenu.addSeparator();
-		final JMenuItem info = new JMenuItem("Info…");
+		final JMenuItem info = new JMenuItem("Infoâ€¦");
 		info.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

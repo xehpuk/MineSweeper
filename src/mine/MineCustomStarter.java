@@ -31,7 +31,7 @@ public class MineCustomStarter extends JDialog implements ActionListener {
 		final JComponent contentPane = Box.createVerticalBox();
 		
 		final JComponent highPanel = Box.createHorizontalBox();
-		final JLabel highLabel = new JLabel("Höhe (" + MIN_HEIGHT + "-" + MAX_HEIGHT + "):");
+		final JLabel highLabel = new JLabel("HÃ¶he (" + MIN_HEIGHT + "-" + MAX_HEIGHT + "):");
 		final LimitedJTextField highField = new LimitedJTextField(3);
 		highField.setMaximumSize(highField.getPreferredSize());
 		highField.setText(String.valueOf(MineFrame.getInstance().getRows()));
