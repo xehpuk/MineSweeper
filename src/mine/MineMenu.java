@@ -36,7 +36,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 
 	public MineMenu() {
 		super();
-		
+
 		final JMenu gameMenu = new JMenu("Spiel");
 		gameMenu.setMnemonic(KeyEvent.VK_S);
 		final JMenuItem newGame = new JMenuItem("Neu");
@@ -116,7 +116,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 			}
 		});
 		gameMenu.add(quit);
-		
+
 		beginners.addItemListener(this);
 		advanced.addItemListener(this);
 		pros.addItemListener(this);
@@ -129,9 +129,9 @@ public class MineMenu extends JMenuBar implements ItemListener {
 				MineFrame.getInstance().getDialog().setVisible(true);
 			}
 		});
-		
+
 		add(gameMenu);
-		
+
 		final JMenu viewMenu = new JMenu("Ansicht");
 		viewMenu.setMnemonic(KeyEvent.VK_A);
 		final JMenuItem screen = new JMenuItem("Screenshot");
@@ -208,10 +208,10 @@ public class MineMenu extends JMenuBar implements ItemListener {
 			lookAndFeelRadioButton.addItemListener(lookAndFeelListener);
 			lookAndFeelMenu.add(lookAndFeelRadioButton);
 		}
-		
+
 		viewMenu.add(lookAndFeelMenu);
 		add(viewMenu);
-		
+
 		final JMenu helpMenu = new JMenu("?");
 		helpMenu.setMnemonic('?');
 		final JMenuItem help = new JMenuItem("Hilfe");
@@ -223,18 +223,18 @@ public class MineMenu extends JMenuBar implements ItemListener {
 		info.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MineFrame.getInstance(), "MineSweeper v0.4.1 by xehpuk", "Info", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(MineFrame.getInstance(), "MineSweeper v0.4.2 by xehpuk", "Info", JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
 		// TODO update info (JEditorPane?)
 		helpMenu.add(info);
 		add(helpMenu);
 	}
-	
+
 	public final MineFileChooser getFileChooser() {
 		return fileChooser;
 	}
-	
+
 	@Override
 	public void itemStateChanged(ItemEvent e) {
 		if (e.getStateChange() == ItemEvent.DESELECTED)
@@ -242,7 +242,7 @@ public class MineMenu extends JMenuBar implements ItemListener {
 		else
 			setCurrentMode((JRadioButtonMenuItem) e.getItemSelectable());;
 	}
-	
+
 	public final JRadioButtonMenuItem getCurrentMode() {
 		return currentMode;
 	}
@@ -250,15 +250,15 @@ public class MineMenu extends JMenuBar implements ItemListener {
 	public final void setCurrentMode(JRadioButtonMenuItem currentMode) {
 		this.currentMode = currentMode;
 	}
-	
+
 	public void setOldMode(JRadioButtonMenuItem itemSelectable) {
 		oldMode = itemSelectable;
 	}
-	
+
 	public void restoreMode() {
 		getOldMode().setSelected(true);
 	}
-	
+
 	private final JRadioButtonMenuItem getOldMode() {
 		return oldMode;
 	}
