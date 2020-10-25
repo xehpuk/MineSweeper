@@ -1,0 +1,47 @@
+Properties:
+	-Xss256k
+	Modus
+		Anfänger
+		Fortgeschrittener
+		Profi
+		Benutzerdefiniert
+	Marker (?)
+	Farbe
+	Sound
+Bestenliste (CSV?)
++ MineDialog
+	+ Wenn leer, dann kleinster Wert
+	+ Enter in Textfeldern = OK
+	+ Wenn zu groß oder zu klein, Wert anpassen
++ MineButton
+	+ setEnabled(false) rausnehmen und setSelected(false) verhindern
+	+ Fokus-Wanderung ausschalten
+Features
+	+ Wrapfield
+	+ Farbe
+	Sound
+	+ Statistik: Wie oft kommt welche Zahl vor und wie oft bisher aufgedeckt.
+	+ Doppelklick auf aufgedecktes Feld öffnet als sicher geltende Felder (Anzahl Flaggen = Zahl auf Feld).
+	+ Erster Klick landet immer auf 0?
+Emoticons
+	+ Mail an Autor wegen fehlendem Schatten bei O_O
+JavaHelp/JEditorPane/JTextPane
+
+Bugs
+	+ Timer soll bei 999 stehen bleiben.
+	+ Minen erst nach erstem Klick verteilen.
+	+ Nimbus unnutzbar wegen "…".
+		> UIManager.getLookAndFeelDefaults().put("ToggleButton.contentMargins", new InsetsUIResource(0, 0, 0, 0))
+
+Statistiken:
+	gefunden	gesamt	%
+0	
+1
+2
+3
+4
+5
+6
+7
+8
+M
