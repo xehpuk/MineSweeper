@@ -4,7 +4,7 @@ Dieses Projekt führte ich (unter anderen) neben meinem Bachelor-Studium. Dabei 
 
 Das Ziel war es, vom “Look and Feel” möglichst nah an das Original von Windows XP zu kommen. Im Großen und Ganzen bin ich mit dem Ergebnis zufrieden, auch wenn meine Version etwas moderner geworden ist. 😏
 
-![Screenshot mit Windows 10, Modus Fortgeschrittene](./win10-advanced.png "Windows 10, Modus Fortgeschrittene")
+![Screenshot mit Windows 10, Modus Profis](./screenshots/win10-pro.png "Profi am Werk")
 
 Meine damalige (hochprofessionelle) To-do-Liste (und `// TODO`s im Code) habe ich unverschönt übernommen. Vielleicht haben irgendwann alle Punkte ein „+“ vorn dran? 😉
 
